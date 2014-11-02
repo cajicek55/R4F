@@ -1,0 +1,17 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class CollectableScript : MonoBehaviour {
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+        transform.Rotate(Vector3.back *70 * Time.deltaTime);
+	}
+
+    
+}
