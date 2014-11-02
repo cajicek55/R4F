@@ -11,6 +11,7 @@ public class CollectableScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.Rotate(Vector3.back *70 * Time.deltaTime);
+
 	}
 
     

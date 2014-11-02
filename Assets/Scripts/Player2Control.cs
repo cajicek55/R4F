@@ -4,9 +4,12 @@ using System.Collections;
 public class Player2Control : Controls {
     
     public int speed = 7;
+	public bool facingRight = true;
+	public Animator anim;
 
     void Update()
     {
+		this.GetComponent<Animator>().SetInteger("Speed", (int) Mathf.Abs(Input.GetAxis ("Player2_Horizontal")));
         if (Input.GetButton("Player2_Horizontal"))
         {
             if (Input.GetAxis("Player2_Horizontal") < 0)
@@ -24,7 +27,22 @@ public class Player2Control : Controls {
             }
 
         }
+		if (Input.GetAxis ("Player2_Horizontal") > 0 && !facingRight) {
+			Flip ();
+		} else if (Input.GetAxis ("Player2_Horizontal") < 0 && facingRight) {
+			Flip ();		
+		}
     }
+
+	void Flip() {
+		
+		facingRight = !facingRight;
+		
+		Vector3 theScale = transform.localScale;
+		theScale.x *= -1;
+		
+		transform.localScale = theScale;
+	}
 
     void OnCollisionStay2D(Collision2D collision)
     {
