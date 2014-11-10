@@ -1,6 +1,37 @@
 fileFormatVersion: 2
 guid: 46a526b22f1e45446b5fa68f92804e9a
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: staanding_0
+    21300002: staanding_1
+    21300004: staanding_2
+    21300006: staanding_3
+    21300008: staanding_4
+    21300010: staanding_5
+    21300012: staanding_6
+    21300014: staanding_7
+    21300016: staanding_8
+    21300018: staanding_9
+    21300020: staanding_10
+    21300022: staanding_11
+    21300024: staanding_12
+    21300026: staanding_13
+    21300028: staanding_14
+    21300030: staanding_15
+    21300032: staanding_16
+    21300034: staanding_17
+    21300036: staanding_18
+    21300038: staanding_19
+    21300040: staanding_20
+    21300042: staanding_21
+    21300044: staanding_22
+    21300046: staanding_23
+    21300048: staanding_24
+    21300050: staanding_25
+    21300052: staanding_26
+    21300054: staanding_27
+    21300056: staanding_28
+    21300058: staanding_29
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
