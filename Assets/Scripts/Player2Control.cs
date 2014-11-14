@@ -9,7 +9,7 @@ public class Player2Control : Controls {
     void Update()
     {
 		this.GetComponent<Animator>().SetInteger("Speed", (int) Mathf.Abs(Input.GetAxis ("Player2_Horizontal")));
-		if ((Input.GetButton("Player2_Horizontal")) && ((this.transform.eulerAngles.z < 40) || (this.transform.eulerAngles.z > 320)))
+		if ((Input.GetButton("Player2_Horizontal")) && ((this.transform.eulerAngles.z < 30) || (this.transform.eulerAngles.z > 330)))
         {
             if (Input.GetAxis("Player2_Horizontal") < 0)
             {
@@ -59,5 +59,27 @@ public class Player2Control : Controls {
 	{
 		Rotate (Vector3.zero);
 		this.rigidbody2D.AddForce(Vector3.up * 6000 * height * Time.deltaTime);
+	}
+
+	void OnCollisionStay2D(Collision2D collision)
+	{
+		//Debug.Log (this.transform.InverseTransformPoint(collision.contacts[0].point));
+		if(this.transform.InverseTransformPoint(collision.contacts[0].point).y < -1.5)
+		{
+			if(collision.gameObject.tag == "Floor")
+			{
+				if (Input.GetAxis("Player2_Jump") > 0)
+				{
+					this.Jump();
+				}		
+				
+				if(!((collision.transform.eulerAngles.z % 90 > 30) && (collision.transform.eulerAngles.z % 90 < 60)))
+				{
+					if(Mathf.Abs(collision.transform.eulerAngles.z - this.transform.eulerAngles.z) > 2)
+						this.Rotate(new Vector3(0, 0, collision.transform.eulerAngles.z % 90));
+				}
+				
+			}
+		}
 	}
 }

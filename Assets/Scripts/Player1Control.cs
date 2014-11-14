@@ -59,5 +59,27 @@ public class Player1Control : Controls {
 	{
 		Rotate (Vector3.zero);
 		this.rigidbody2D.AddForce(Vector3.up * 5000 * height * Time.deltaTime);
-	}    
+	}  
+
+	void OnCollisionStay2D(Collision2D collision)
+	{
+		//Debug.Log (this.transform.InverseTransformPoint(collision.contacts[0].point));
+		if(this.transform.InverseTransformPoint(collision.contacts[0].point).y < -1.5)
+		{
+			if(collision.gameObject.tag == "Floor")
+			{
+				if (Input.GetAxis("Player1_Jump") > 0)
+				{
+					this.Jump();
+				}		
+
+				if(!((collision.transform.eulerAngles.z % 90 > 30) && (collision.transform.eulerAngles.z % 90 < 60)))
+				{
+					if(Mathf.Abs(collision.transform.eulerAngles.z - this.transform.eulerAngles.z) > 2)
+						this.Rotate(new Vector3(0, 0, collision.transform.eulerAngles.z % 90));
+				}
+					
+			}
+		}
+	}
 }
