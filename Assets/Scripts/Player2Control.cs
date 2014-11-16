@@ -9,7 +9,7 @@ public class Player2Control : Controls {
     void Update()
     {
 		this.GetComponent<Animator>().SetInteger("Speed", (int) Mathf.Abs(Input.GetAxis ("Player2_Horizontal")));
-		if ((Input.GetButton("Player2_Horizontal")) && ((this.transform.eulerAngles.z < 30) || (this.transform.eulerAngles.z > 330)))
+		if /*(*/(Input.GetButton("Player2_Horizontal"))// && ((this.transform.eulerAngles.z < 30) || (this.transform.eulerAngles.z > 330)))
         {
             if (Input.GetAxis("Player2_Horizontal") < 0)
             {
