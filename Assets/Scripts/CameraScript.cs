@@ -27,7 +27,11 @@ public class CameraScript : MonoBehaviour {
 								curPos.z += GameObject.FindGameObjectsWithTag ("Player") [i].transform.position.z;
 						}
 						curPos.x = curPos.x / GameObject.FindGameObjectsWithTag ("Player").Length;
+<<<<<<< HEAD
 						curPos.y = (curPos.y+5) / GameObject.FindGameObjectsWithTag ("Player").Length;
+=======
+						curPos.y = curPos.y / GameObject.FindGameObjectsWithTag ("Player").Length;
+>>>>>>> origin/master
 						curPos.z = (curPos.z-100) / GameObject.FindGameObjectsWithTag ("Player").Length;
 
 						//pocitanie "vah"
@@ -45,7 +49,11 @@ public class CameraScript : MonoBehaviour {
 		
 						if (distance > 8) {
 								curPos.x += Mathf.Abs ((1 / distance) * max.x);
+<<<<<<< HEAD
 								curPos.y += (1 / distance) * max.y ;
+=======
+								curPos.y += (1 / distance) * max.y;
+>>>>>>> origin/master
 						}
 						//pohyb kamery medzi vsetkych hracov
 						Camera.main.transform.position = curPos;

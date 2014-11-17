@@ -59,7 +59,7 @@
      <Compile Include="Assets\Scripts\SpikedWheelScript.cs" />
      <Compile Include="Assets\Scripts\StaticBackgroundScript.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Evuliak/Documents/GitHub/R4F/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Marek/Documents/GitHub/R4F/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
