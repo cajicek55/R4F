@@ -30,7 +30,7 @@ public class MenuCamera : MonoBehaviour {
 		//--Moving------------------------------------------------------------
 
 		while((Mathf.Abs (this.transform.position.x + (Mathf.Cos(angle)/200)) > 4) || (this.transform.position.y + (Mathf.Sin(angle)/200)> 3) 
-		   || (this.transform.position.y + (Mathf.Cos (angle) / 200)< -1))
+		   || (this.transform.position.y + (Mathf.Sin (angle) / 200)< -1))
 		{
 			angle = Random.Range (0, 2 * Mathf.PI);
 		}
