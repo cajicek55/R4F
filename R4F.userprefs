@@ -1,23 +1,12 @@
 ﻿<Properties>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SpikedWheelScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CameraScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\CameraScript.cs" Line="34" Column="4" />
-      <File FileName="Assets\Scripts\CameraScript.cs" Line="67" Column="1" />
-      <File FileName="Assets\Scripts\StaticBackgroundScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player1Control.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player2Control.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SpikedWheelScript.cs" Line="8" Column="3" />
-      <File FileName="Assets\Scripts\CoinScript.cs" Line="13" Column="2" />
-      <File FileName="Assets\Scripts\CollectableScript.cs" Line="12" Column="1" />
-=======
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player1Control.cs">
-    <Files>
-      <File FileName="Assets\Scripts\Player1Control.cs" Line="91" Column="3" />
-      <File FileName="Assets\Scripts\Player2Control.cs" Line="51" Column="2" />
->>>>>>> origin/master
+      <File FileName="Assets\Scripts\CameraScript.cs" Line="15" Column="3" />
+      <File FileName="Assets\Scripts\BreakableScript.cs" Line="25" Column="30" />
+      <File FileName="Assets\Scripts\GUITextP2Script.cs" Line="7" Column="64" />
+      <File FileName="Assets\Scripts\Controls.cs" Line="19" Column="16" />
+      <File FileName="Assets\Scripts\GuiTextScript.cs" Line="7" Column="65" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

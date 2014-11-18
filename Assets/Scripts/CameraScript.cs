@@ -8,11 +8,11 @@ public class CameraScript : MonoBehaviour {
 	float distance = 0;
 	Vector3 max;
 	Vector3 min;
+	GameObject text = null;
 
 	// Use this for initialization
 	void Start () {
-		//pri zrušeni ktorehokolvek hrača pride k OutOfBounds
-		//positions = new Vector3[GameObject.FindGameObjectsWithTag("Player").Length];
+
 	}
 	
 
@@ -65,10 +65,20 @@ public class CameraScript : MonoBehaviour {
 		}
 		//vyhra jedneho z hracov
 		if (GameObject.FindGameObjectsWithTag ("Player").Length <= 1) {
-				
+			if((GameObject.Find("VyhernyText")==null))Win ();
 		}
 
 		//zmensovanie Field of View
 		if(Camera.main.orthographicSize > 2.5f) Camera.main.orthographicSize = Camera.main.orthographicSize - 0.0001f;
+	}
+
+	public void Win(){
+		text = new GameObject("VyhernyText");
+		text.AddComponent("GUIText");
+		Vector3 pos = new Vector3(0,0,0);
+		pos = Camera.main.transform.position;
+		pos = pos - new Vector3(0,0,20);
+		text.GetComponent<Transform>().position = pos;
+		text.GetComponent<GUIText>().text = "You win";
 	}
 }

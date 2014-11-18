@@ -15,6 +15,10 @@ public class Controls : MonoBehaviour {
         this.score++;
     }
 
+	public int getScore(){
+		return score;
+	}
+
 	public void OnBecameInvisible(){
 
 			Destroy(this.gameObject);		

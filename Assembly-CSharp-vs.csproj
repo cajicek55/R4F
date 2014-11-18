@@ -52,6 +52,8 @@
      <Compile Include="Assets\Scripts\CollectableScript.cs" />
      <Compile Include="Assets\Scripts\Controls.cs" />
      <Compile Include="Assets\Scripts\CrusherScript.cs" />
+     <Compile Include="Assets\Scripts\GUITextP2Script.cs" />
+     <Compile Include="Assets\Scripts\GuiTextScript.cs" />
      <Compile Include="Assets\Scripts\JumpArrowScript.cs" />
      <Compile Include="Assets\Scripts\Player1Control.cs" />
      <Compile Include="Assets\Scripts\Player2Control.cs" />
@@ -59,7 +61,7 @@
      <Compile Include="Assets\Scripts\SpikedWheelScript.cs" />
      <Compile Include="Assets\Scripts\StaticBackgroundScript.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Evuliak/Documents/GitHub/R4F/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Marek/Documents/GitHub/R4F/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
