@@ -12,12 +12,7 @@ public class CoinScript : CollectableScript {
 	void Update () {
 	
 	}
-
-//    void OnCollisionEnter2D(Collision2D collider)
-//    {
-//        collider.gameObject.GetComponent<Controls>().IncrementScore();
-//        GameObject.Destroy(this.gameObject);
-//    }
+	
 
 	void OnTriggerEnter2D(Collider2D hit){
 		if(hit.gameObject.tag == "Player"){

@@ -68,7 +68,7 @@ public class Player1Control : Controls {
 		if(!(((collision.transform.eulerAngles.z % 90) > 30) && ((collision.transform.eulerAngles.z % 90) < 60)))
 		{
 			if(Mathf.Abs(collision.transform.eulerAngles.z - this.transform.eulerAngles.z) > 2)
-				this.Rotate(new Vector3(0, 0, collision.transform.eulerAngles.z % 90));
+				this.Rotate(new Vector3(0, 0, collision.transform.eulerAngles.z % 30));
 		}
 		//this.gameObject.transform.eulerAngles = new Vector3(0,0,0);
 		//Debug.Log (this.transform.InverseTransformPoint(collision.contacts[0].point));
