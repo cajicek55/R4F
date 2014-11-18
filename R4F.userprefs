@@ -1,10 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\WinScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player2Control.cs">
     <Files>
-      <File FileName="Assets\Scripts\CameraScript.cs" Line="66" Column="60" />
-      <File FileName="Assets\WinScript.cs" Line="9" Column="5" />
-      <File FileName="Assets\Scripts\CoinScript.cs" Line="23" Column="38" />
+      <File FileName="Assets\Scripts\Player1Control.cs" Line="64" Column="1" />
+      <File FileName="Assets\Scripts\Player2Control.cs" Line="70" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

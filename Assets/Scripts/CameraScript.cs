@@ -63,10 +63,11 @@ public class CameraScript : MonoBehaviour {
 			Camera.main.transform.position = curPos;
 		}
 		//vyhra jedneho z hracov
-		if (GameObject.FindGameObjectsWithTag ("Player").Length == 1) {
-			Win (GameObject.FindGameObjectsWithTag ("Player")[0]);
+		if(winText.text.Equals("")){
+			if (GameObject.FindGameObjectsWithTag ("Player").Length == 1) {
+				Win (GameObject.FindGameObjectsWithTag ("Player")[0]);
+			}
 		}
-
 		//zmensovanie Field of View
 		if(Camera.main.orthographicSize > 2.5f) Camera.main.orthographicSize = Camera.main.orthographicSize - 0.0001f;
 	}
