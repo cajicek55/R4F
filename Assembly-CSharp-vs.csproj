@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\PowerUpScript.cs" />
      <Compile Include="Assets\Scripts\SpikedWheelScript.cs" />
      <Compile Include="Assets\Scripts\StaticBackgroundScript.cs" />
+     <Compile Include="Assets\WinScript.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Marek/Documents/GitHub/R4F/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>

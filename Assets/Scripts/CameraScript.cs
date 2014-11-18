@@ -4,15 +4,14 @@ using System.Collections;
 public class CameraScript : MonoBehaviour {
 
 	private Vector3 pos;
-//	private Vector3[] positions;
 	float distance = 0;
 	Vector3 max;
 	Vector3 min;
-	GameObject text = null;
+	public GUIText winText;
 
 	// Use this for initialization
 	void Start () {
-
+		winText.text = "";
 	}
 	
 
@@ -64,21 +63,15 @@ public class CameraScript : MonoBehaviour {
 			Camera.main.transform.position = curPos;
 		}
 		//vyhra jedneho z hracov
-		if (GameObject.FindGameObjectsWithTag ("Player").Length <= 1) {
-			if((GameObject.Find("VyhernyText")==null))Win ();
+		if (GameObject.FindGameObjectsWithTag ("Player").Length == 1) {
+			Win (GameObject.FindGameObjectsWithTag ("Player")[0]);
 		}
 
 		//zmensovanie Field of View
 		if(Camera.main.orthographicSize > 2.5f) Camera.main.orthographicSize = Camera.main.orthographicSize - 0.0001f;
 	}
 
-	public void Win(){
-		text = new GameObject("VyhernyText");
-		text.AddComponent("GUIText");
-		Vector3 pos = new Vector3(0,0,0);
-		pos = Camera.main.transform.position;
-		pos = pos - new Vector3(0,0,20);
-		text.GetComponent<Transform>().position = pos;
-		text.GetComponent<GUIText>().text = "You win";
+	public void Win(GameObject gaOb){
+		winText.text = gaOb.name.ToString() + " wins";
 	}
 }

@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\PowerUpScript.cs" />
      <Compile Include="Assets\Scripts\SpikedWheelScript.cs" />
      <Compile Include="Assets\Scripts\StaticBackgroundScript.cs" />
+     <Compile Include="Assets\WinScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
