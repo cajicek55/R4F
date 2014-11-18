@@ -58,6 +58,7 @@ public class Player1Control : Controls {
 
 	public void Jump()
 	{
+		this.rigidbody2D.velocity = Vector3.zero;
 		Rotate (Vector3.zero);
 		this.rigidbody2D.AddForce(Vector3.up * 5000 * height * Time.deltaTime);
 	}  

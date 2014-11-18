@@ -16,8 +16,9 @@ public class CoinScript : CollectableScript {
 
 	void OnTriggerEnter2D(Collider2D hit){
 		if(hit.gameObject.tag == "Player"){
-			if(this.gameObject.GetComponent<SpriteRenderer>().sprite.name.Equals("diamond")) for(int i=0;i<4;i++){
-				hit.gameObject.GetComponent<Controls>().IncrementScore();
+			if(this.gameObject.GetComponent<SpriteRenderer>() != null)
+				if(this.gameObject.GetComponent<SpriteRenderer>().sprite.name.Equals("diamond")) for(int i=0;i<4;i++){
+					hit.gameObject.GetComponent<Controls>().IncrementScore();
 			}else{
 				hit.gameObject.GetComponent<Controls>().IncrementScore();}
 			GameObject.Destroy(this.gameObject);
