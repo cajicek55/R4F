@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CameraScript : MonoBehaviour {
 
+	private int end = -1;
 	private Vector3 pos;
 	float distance = 0;
 	Vector3 max;
@@ -16,6 +17,18 @@ public class CameraScript : MonoBehaviour {
 	
 
 	void Update () {
+
+		//--prehodenie do menu po skonceni hry-------------------------------
+		if (end > 0)
+		{
+			end--;
+		}
+		if (end == 0)
+		{
+			Application.LoadLevel("menu");
+		}
+		//-------------------------------------------------------------------
+
 		if (GameObject.FindGameObjectsWithTag ("Player").Length > 1) {
 						//zistenie polohy vsetkych hracov
 						Vector3 curPos = new Vector3 (0, 0, 0);
@@ -68,11 +81,13 @@ public class CameraScript : MonoBehaviour {
 				Win (GameObject.FindGameObjectsWithTag ("Player")[0]);
 			}
 		}
+
 		//zmensovanie Field of View
 		if(Camera.main.orthographicSize > 2.5f) Camera.main.orthographicSize = Camera.main.orthographicSize - 0.0001f;
 	}
 
 	public void Win(GameObject gaOb){
 		winText.text = gaOb.name.ToString() + " wins";
+		end = 300;
 	}
 }
