@@ -1,6 +1,16 @@
 fileFormatVersion: 2
 guid: ebf440e90a8df26468875e4688564e45
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: buildings blue_0
+    21300002: buildings blue_1
+    21300004: buildings blue_2
+    21300006: buildings blue_3
+    21300008: buildings blue_4
+    21300010: buildings blue_5
+    21300012: buildings blue_6
+    21300014: buildings blue_7
+    21300016: buildings blue_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
