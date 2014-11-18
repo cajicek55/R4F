@@ -62,10 +62,6 @@ public class Player1Control : Controls {
 		this.rigidbody2D.AddForce(Vector3.up * 5000 * height * Time.deltaTime);
 	}  
 
-	void OnCollisionEnter2D(Collision2D collision){
-		//float rotZ = collision.collider.transform.eulerAngles.z;
-
-	}
 
 	void OnCollisionStay2D(Collision2D collision)
 	{

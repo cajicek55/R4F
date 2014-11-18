@@ -10,18 +10,19 @@ public class BreakableScript : MonoBehaviour {
 
     void OnCollisionStay2D(Collision2D collider)
     {
-//        if (collider.gameObject.tag == "Crusher")
-//        {
-//            CrusherScript crush = collider.gameObject.GetComponent<CrusherScript>();
-//            if(crush.crushing == true)
-//            {
-//                GameObject.Destroy(this.gameObject);
-//            }
-//        }
 
 		if (collider.gameObject.GetComponent<CrusherScript>() != null)
 		{
 			CrusherScript crush = collider.gameObject.GetComponent<CrusherScript>();
+			if(crush.crushing == true)
+			{
+				startBreak();
+				GameObject.Destroy(this.gameObject);
+			}
+		}
+		if (collider.gameObject.GetComponent<Crusher2Script>() != null)
+		{
+			Crusher2Script crush = collider.gameObject.GetComponent<Crusher2Script>();
 			if(crush.crushing == true)
 			{
 				startBreak();

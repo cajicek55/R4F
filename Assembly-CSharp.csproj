@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\CoinScript.cs" />
      <Compile Include="Assets\Scripts\CollectableScript.cs" />
      <Compile Include="Assets\Scripts\Controls.cs" />
+     <Compile Include="Assets\Scripts\Crusher2Script.cs" />
      <Compile Include="Assets\Scripts\CrusherScript.cs" />
      <Compile Include="Assets\Scripts\GUITextP2Script.cs" />
      <Compile Include="Assets\Scripts\GuiTextScript.cs" />
@@ -60,7 +61,7 @@
      <Compile Include="Assets\Scripts\PowerUpScript.cs" />
      <Compile Include="Assets\Scripts\SpikedWheelScript.cs" />
      <Compile Include="Assets\Scripts\StaticBackgroundScript.cs" />
-     <Compile Include="Assets\WinScript.cs" />
+     <Compile Include="Assets\Scripts\WinScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
