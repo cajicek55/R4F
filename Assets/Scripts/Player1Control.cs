@@ -71,7 +71,9 @@ public class Player1Control : Controls {
 			if(Mathf.Abs(collision.transform.eulerAngles.z - this.transform.eulerAngles.z) > 2)
 				this.Rotate(new Vector3(0, 0, collision.transform.eulerAngles.z % 30));
 		}
-		//this.gameObject.transform.eulerAngles = new Vector3(0,0,0);
+		if(!collision.gameObject.CompareTag("Floor")){
+			this.gameObject.transform.eulerAngles = new Vector3(0,0,0);
+		}
 		//Debug.Log (this.transform.InverseTransformPoint(collision.contacts[0].point));
 		if(this.transform.InverseTransformPoint(collision.contacts[0].point).y < -1.5)
 		{

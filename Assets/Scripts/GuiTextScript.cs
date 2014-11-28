@@ -7,7 +7,7 @@ public class GuiTextScript : MonoBehaviour {
 		if(GameObject.Find("Player1")==null){
 			Destroy(this.gameObject);
 			Destroy(GameObject.Find("prvyHracOvladanie"));
-		}
+		} else
 		this.gameObject.GetComponent<GUIText>().text = "Current score of player 1: " + GameObject.Find("Player1").GetComponent<Controls>().getScore();
 	}
 }

@@ -19,9 +19,11 @@ public class WinScript : MonoBehaviour {
 
 	public void Win(GameObject gaOb){
 		winText.text = gaOb.name.ToString() + " has more coins\n" + gaOb.name.ToString() +" wins";
+		Camera.main.GetComponent<CameraScript>().setEnd(300);
 	}
 
 	public void Win(){
 		winText.text = "Tie";
+		Camera.main.GetComponent<CameraScript>().setEnd(300);
 	}
 }
