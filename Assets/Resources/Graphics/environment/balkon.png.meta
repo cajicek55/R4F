@@ -1,6 +1,8 @@
 fileFormatVersion: 2
 guid: 1ab167fa3f830904d810ee26e750bef7
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: balkon
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

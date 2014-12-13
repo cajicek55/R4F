@@ -9,6 +9,7 @@ public class CameraScript : MonoBehaviour {
 	Vector3 max;
 	Vector3 min;
 	public GUIText winText;
+	public int zmensovanie = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -38,7 +39,7 @@ public class CameraScript : MonoBehaviour {
 								curPos.z += GameObject.FindGameObjectsWithTag ("Player") [i].transform.position.z;
 						}
 						curPos.x = curPos.x / GameObject.FindGameObjectsWithTag ("Player").Length;
-						curPos.y = (curPos.y+5) / GameObject.FindGameObjectsWithTag ("Player").Length;
+						curPos.y = (curPos.y + Camera.main.orthographicSize - 2.5f) / GameObject.FindGameObjectsWithTag ("Player").Length;
 
 						curPos.z = (curPos.z-100) / GameObject.FindGameObjectsWithTag ("Player").Length;
 
@@ -56,11 +57,18 @@ public class CameraScript : MonoBehaviour {
 						curPos.x += distance/8;
 
 						//pohyb kamery medzi vsetkych hracov
-						Camera.main.transform.position = curPos;
+						pos = curPos;			
+						Camera.main.transform.position = pos;
+						
 				} else {
-			Vector3 curPos = GameObject.FindGameObjectWithTag("Player").transform.position;
-			curPos.z -= 100;
-			Camera.main.transform.position = curPos;
+			if(GameObject.FindGameObjectWithTag("Player")!=null) 
+			{
+				Vector3 curPos = GameObject.FindGameObjectWithTag("Player").transform.position;
+				curPos.z -= 100;
+				pos = curPos;
+				Camera.main.transform.position = pos;
+
+			}
 		}
 		//vyhra jedneho z hracov
 		if(winText.text.Equals("")){
@@ -70,7 +78,8 @@ public class CameraScript : MonoBehaviour {
 		}
 
 		//zmensovanie Field of View
-		if(Camera.main.orthographicSize > 2.5f) Camera.main.orthographicSize = Camera.main.orthographicSize - 0.0001f;
+		if (Camera.main.orthographicSize > 2.5f)
+						Camera.main.orthographicSize = Camera.main.orthographicSize - (zmensovanie/1000f); //0.0001f;
 	}
 
 	public void setEnd(int time){
