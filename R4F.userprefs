@@ -1,16 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\StaticBackgroundScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player1Control.cs">
     <Files>
-      <File FileName="Assets\Scripts\CameraScript.cs" Line="28" Column="4" />
+      <File FileName="Assets\Scripts\JumpArrowScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CameraScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PlayerJumpControl.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\JumpArrowScript.cs" Line="27" Column="2" />
       <File FileName="Assets\Scripts\SpikedWheelScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\LadderScript.cs" Line="11" Column="63" />
-      <File FileName="Assets\Scripts\Player1Control.cs" Line="87" Column="43" />
-      <File FileName="Assets\Scripts\Player2Control.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LadderScript.cs" Line="11" Column="4" />
+      <File FileName="Assets\Scripts\Player1Control.cs" Line="114" Column="1" />
+      <File FileName="Assets\Scripts\Player2Control.cs" Line="27" Column="4" />
       <File FileName="Assets\Scripts\LampScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\WinScript.cs" Line="8" Column="1" />
+      <File FileName="Assets\Scripts\WinScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Controls.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Crusher2Script.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CrusherScript.cs" Line="1" Column="1" />
@@ -18,6 +18,9 @@
       <File FileName="Assets\Scripts\GUITextP2Script.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GuiTextScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\StaticBackgroundScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CollectableScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CoinScript.cs" Line="28" Column="3" />
+      <File FileName="Assets\Scripts\JumpBoostScript.cs" Line="24" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

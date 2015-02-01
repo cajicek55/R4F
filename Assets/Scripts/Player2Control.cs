@@ -2,20 +2,44 @@
 using System.Collections;
 
 public class Player2Control : Controls {
-    public int speed = 7;
+    public float speed = 7;
 	public bool facingRight = true;
 	public bool doubleJump = false;
 	public bool dying = false;
+	public float jumpMult = 1;
+	public int jumpBoost = -1;
+	public int speedBoost = -1;
 
     void Update()
     {
-
+		//--------------------------------------------------------------------------------------------------------------
 		if (dying) 
 		{
 			this.gameObject.transform.localScale = this.gameObject.transform.localScale - new Vector3(0.05f, 0.05f, 0);
 			if(this.gameObject.transform.localScale.x <= 0)
 				Destroy (this.gameObject);
 		}
+
+		if (jumpBoost > 0) 
+		{
+			jumpBoost--;
+		}
+		if (jumpBoost == 0)
+		{
+			jumpBoost = -1;
+			jumpMult = 1;
+		}
+
+		if (speedBoost > 0) 
+		{
+			speedBoost--;
+		}
+		if (speedBoost == 0)
+		{
+			speedBoost = -1;
+			speed *= 1.15f;
+		}
+		//--------------------------------------------------------------------------------------------------------------
 
 		this.GetComponent<Animator>().SetInteger("Speed", (int) Mathf.Abs(Input.GetAxis ("Player2_Horizontal")));
 		if ((Input.GetButton("Player2_Horizontal")) && ((this.transform.eulerAngles.z < 30) || (this.transform.eulerAngles.z > 330)))
@@ -43,7 +67,7 @@ public class Player2Control : Controls {
 		if (doubleJump && (Input.GetAxis("Player2_Jump") > 0))
 		{
 			this.rigidbody2D.velocity = Vector3.zero;
-			this.rigidbody2D.AddForce(Vector3.up * 7000 * height * Time.deltaTime);
+			this.rigidbody2D.AddForce(Vector3.up * 6000 * height * jumpMult * Time.deltaTime);
 			doubleJump = false;
 		}
     }
@@ -68,7 +92,7 @@ public class Player2Control : Controls {
 	{
 		this.rigidbody2D.velocity = Vector3.zero;
 		Rotate (Vector3.zero);
-		this.rigidbody2D.AddForce(Vector3.up * 6000 * height * Time.deltaTime);
+		this.rigidbody2D.AddForce(Vector3.up * 6000 * height * jumpMult * Time.deltaTime);
 	}
 
 	void OnCollisionStay2D(Collision2D collision)
