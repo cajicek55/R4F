@@ -79,7 +79,7 @@ public class CameraScript : MonoBehaviour {
 
 		//zmensovanie Field of View
 		if (Camera.main.orthographicSize > 2.5f)
-						Camera.main.orthographicSize = Camera.main.orthographicSize - (zmensovanie/1000f); //0.0001f;
+						Camera.main.orthographicSize = Camera.main.orthographicSize - (zmensovanie/2000f); //0.0001f;
 	}
 
 	public void setEnd(int time){

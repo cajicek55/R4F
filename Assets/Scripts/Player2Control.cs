@@ -5,9 +5,18 @@ public class Player2Control : Controls {
     public int speed = 7;
 	public bool facingRight = true;
 	public bool doubleJump = false;
+	public bool dying = false;
 
     void Update()
     {
+
+		if (dying) 
+		{
+			this.gameObject.transform.localScale = this.gameObject.transform.localScale - new Vector3(0.05f, 0.05f, 0);
+			if(this.gameObject.transform.localScale.x <= 0)
+				Destroy (this.gameObject);
+		}
+
 		this.GetComponent<Animator>().SetInteger("Speed", (int) Mathf.Abs(Input.GetAxis ("Player2_Horizontal")));
 		if ((Input.GetButton("Player2_Horizontal")) && ((this.transform.eulerAngles.z < 30) || (this.transform.eulerAngles.z > 330)))
         {

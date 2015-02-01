@@ -5,9 +5,16 @@ public class Player1Control : Controls {
     public int speed = 7;
 	public bool facingRight = true;
 	public bool doubleJump = false;
+	public bool dying = false;
 
 	void Update()
     {
+		if (dying) 
+		{
+			this.gameObject.transform.localScale = this.gameObject.transform.localScale - new Vector3(0.05f, 0.05f, 0);
+			if(this.gameObject.transform.localScale.x <= 0)
+				Destroy (this.gameObject);
+		}
 
 		this.GetComponent<Animator>().SetInteger("Speed", (int) Mathf.Abs(Input.GetAxis ("Player1_Horizontal")));
 		if ((Input.GetButton("Player1_Horizontal")) && ((this.transform.eulerAngles.z < 40) || (this.transform.eulerAngles.z > 320)))
@@ -38,6 +45,7 @@ public class Player1Control : Controls {
 			this.rigidbody2D.AddForce(Vector3.up * 5000 * height * Time.deltaTime);
 			doubleJump = false;
 		}
+	
     }
 
 	void Flip() {
@@ -61,8 +69,7 @@ public class Player1Control : Controls {
 		this.rigidbody2D.velocity = Vector3.zero;
 		Rotate (Vector3.zero);
 		this.rigidbody2D.AddForce(Vector3.up * 5000 * height * Time.deltaTime);
-	}  
-
+	} 
 
 	void OnCollisionStay2D(Collision2D collision)
 	{

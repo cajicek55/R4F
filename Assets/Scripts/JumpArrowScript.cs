@@ -34,7 +34,7 @@ public class JumpArrowScript : MonoBehaviour {
 			if(script != null)
 			{
 				script.doubleJump = true;
-				cooldown = 300;
+				cooldown = 120;
 
 				this.gameObject.renderer.enabled = false;
 				this.gameObject.collider2D.enabled = false;
@@ -44,7 +44,7 @@ public class JumpArrowScript : MonoBehaviour {
 			if(script2 != null)
 			{
 				script2.doubleJump = true;
-				cooldown = 300;
+				cooldown = 120;
 				
 				this.gameObject.renderer.enabled = false;
 				this.gameObject.collider2D.enabled = false;
