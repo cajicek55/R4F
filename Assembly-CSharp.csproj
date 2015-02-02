@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\ClockworkLevel\FloatingPlatformScript.cs" />
      <Compile Include="Assets\Scripts\ClockworkLevel\RotatingPlatformScript.cs" />
+     <Compile Include="Assets\Scripts\ClockworkLevel\WarningScript.cs" />
      <Compile Include="Assets\Scripts\CoinScript.cs" />
      <Compile Include="Assets\Scripts\CollectableScript.cs" />
      <Compile Include="Assets\Scripts\Controls.cs" />
