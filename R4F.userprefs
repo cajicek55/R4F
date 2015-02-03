@@ -1,12 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ClockworkLevel\WarningScript.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Menu\MenuButtonScript.cs">
     <Files>
-      <File FileName="R4F.sln" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ClockworkLevel\WarningScript.cs" Line="16" Column="22" />
-      <File FileName="Assets\Scripts\CameraScript.cs" Line="11" Column="16" />
-      <File FileName="Assets\Scripts\ClockworkLevel\RotatingPlatformScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CoinScript.cs" Line="18" Column="37" />
+      <File FileName="Assets\Scripts\Menu\MenuButtonScript.cs" Line="54" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

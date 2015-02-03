@@ -25,7 +25,7 @@ public class CameraScript : MonoBehaviour {
 		}
 		if (end == 0)
 		{
-			//Application.LoadLevel("menu");
+			Application.LoadLevel("menu");
 		}
 		//-------------------------------------------------------------------
 

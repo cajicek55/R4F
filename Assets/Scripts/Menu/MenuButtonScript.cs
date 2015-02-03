@@ -16,6 +16,8 @@ public class MenuButtonScript : MonoBehaviour {
 			GameObject.Find("Levels").guiText.enabled = true;
 			GameObject.Find("Level1").guiText.enabled = true;
 			GameObject.Find("Level2").guiText.enabled = true;
+			GameObject.Find("Level3").guiText.enabled = true;
+			GameObject.Find("Level4").guiText.enabled = true;
 			GameObject.Find("LevelBack").guiText.enabled = true;
 		}
 
@@ -50,6 +52,16 @@ public class MenuButtonScript : MonoBehaviour {
 			Application.LoadLevel("ass2");
 		}
 
+		if(this.name == "Level3")
+		{
+			Application.LoadLevel("ass3");
+		}
+
+		if(this.name == "Level4")
+		{
+			Application.LoadLevel("clockwork");
+		}
+
 		if(this.name == "LevelBack")
 		{
 			GameObject.Find("Play").guiText.enabled = true;
@@ -58,6 +70,8 @@ public class MenuButtonScript : MonoBehaviour {
 			GameObject.Find("Levels").guiText.enabled = false;
 			GameObject.Find("Level1").guiText.enabled = false;
 			GameObject.Find("Level2").guiText.enabled = false;
+			GameObject.Find("Level3").guiText.enabled = false;
+			GameObject.Find("Level4").guiText.enabled = false;
 			GameObject.Find("LevelBack").guiText.enabled = false;
 		}
 
