@@ -67,7 +67,7 @@ public class Player1Control : Controls {
 		if (doubleJump && (Input.GetAxis("Player1_Jump") > 0))
 		{
 			this.rigidbody2D.velocity = Vector3.zero;
-			this.rigidbody2D.AddForce(Vector3.up * 5000 * height * jumpMult * Time.deltaTime);
+			this.rigidbody2D.AddForce(Vector3.up * 6000 * height * jumpMult * Time.deltaTime);
 			doubleJump = false;
 		}
 	
@@ -93,7 +93,7 @@ public class Player1Control : Controls {
 	{
 		this.rigidbody2D.velocity = Vector3.zero;
 		Rotate (Vector3.zero);
-		this.rigidbody2D.AddForce(Vector3.up * 5000 * height * jumpMult * Time.deltaTime);
+		this.rigidbody2D.AddForce(Vector3.up * 6000 * height * jumpMult * Time.deltaTime);
 	} 
 
 	void OnCollisionStay2D(Collision2D collision)
