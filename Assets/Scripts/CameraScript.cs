@@ -16,6 +16,11 @@ public class CameraScript : MonoBehaviour {
 		winText.text = "";
 	}
 	
+	void Awake(){
+		Application.targetFrameRate = 60;
+
+	}
+
 
 	void Update () {
 		//--prehodenie do menu po skonceni hry-------------------------------

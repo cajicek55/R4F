@@ -1,0 +1,28 @@
+Initialize engine version: 4.5.1f3 (73cd57f80e3e)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 7470M (ID=0x6760)
+    Vendor:   ATI
+    VRAM:     1012 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Marek\Documents\GitHub\R4F\r4f_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Marek\Documents\GitHub\R4F\r4f_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Marek\Documents\GitHub\R4F\r4f_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Marek\Documents\GitHub\R4F\r4f_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.200 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.597591 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2523.
+Total: 2.693595 ms (FindLiveObjects: 0.437581 ms CreateObjectMapping: 0.036387 ms MarkObjects: 0.496827 ms  DeleteObjects: 0.218324 ms)
+
+UnloadTime: 4.085178 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 175.
+Total: 5.880753 ms (FindLiveObjects: 0.020992 ms CreateObjectMapping: 0.020059 ms MarkObjects: 0.116159 ms  DeleteObjects: 4.783535 ms)
+
